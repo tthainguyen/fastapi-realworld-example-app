@@ -24,7 +24,6 @@ stages:
       displayName: Build an image
       inputs:
         command: build
-        repository: petproject
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(tag)
