@@ -31,3 +31,4 @@ stages:
       inputs:
         awsCredentials: 'ECS'
         imageSource: 'imagename'
+        repositoryName: 'petproject'
