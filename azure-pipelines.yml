@@ -24,6 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         command: build
+        repository: petproject
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(tag)
@@ -31,6 +32,7 @@ stages:
     - task: ECRPushImage@1
       inputs:
         awsCredentials: 'ECS'
-        imageSource: 'imageid'
+        imageSource: 'imagename'
         repositoryName: 'petproject'
         sourceImageTag: $(tag)
+        sourceImageName: petproject
