@@ -36,3 +36,4 @@ stages:
         repositoryName: 'petproject'
         sourceImageTag: $(tag)
         sourceImageName: petproject
+        regionName: ap-southeast-1
